@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>The Persisting Vision of Cinema</title>
+</head>
+<body> 
+    <div>
+    <div class="spotlight"></div>
+    <!-- <h2 class="title">Move the mouse to spot the light</h2> -->
+    <header>The Persisting Vision of Cinema</header>
+    <script>
+        var focusedCard = document.querySelector('.spotlight');
+
+        window.addEventListener('mousemove', e => {
+
+            /* Get mouse page coordinates */
+            var percentageX = e.pageX / window.innerWidth * 50;
+            var percentageY = e.pageY / window.innerHeight * 50;
+
+            /* Center the background spotlight on mouse coordinates */
+            focusedCard.style.backgroundImage = `radial-gradient(circle at ${percentageX}% ${percentageY}%, transparent 50px, rgba(0,0,0,0.75) 900px`
+        })
+
+    </script>
+
+    <p style="text-align: center;">In the film The Magic Box, which was made in England in 1950, the great English actor Robert Donat plays William Friese-Greene—one of the people who invented movies. The Magic Box was packed with guest stars. It was made for an event called the Festival of Britain. You had about fifty or sixty of the biggest actors in England at the time, all doing for the most part little cameos, including the man who played the policeman—that was Sir Laurence Olivier.
+    I saw this picture for the first time with my father. I was eight years old. I’ve never really gotten over the impact that it had. I believe this is what ignited in me the wonder of cinema, and the obsession—with watching movies, making them, inventing them.
+    Friese-Greene gives everything of himself to the movies, and he dies a pauper. If you know the full story of his life and its end, the line in the film about the invention of the movies—“You must be a very happy man, Mr. Friese-Greene”—of course is ironic, but in some ways it’s also true because he’s followed his obsession all the way. So it’s both disturbing and inspiring. I was very young. I didn’t put this into words at the time, but I sensed these things and I saw them up there on the screen.
+    </p>
+</div>  
+</body>
+</html>
