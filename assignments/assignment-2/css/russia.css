@@ -11,22 +11,41 @@ h1{
 
 }
 
-.menu{
-    font-family: helvetica;
-    font-style: italic;
 
+.menu{
+    display:flex;
+    align-items:flex-start;
+    font-size: 20px;
+}
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100%;
+   display: table;
+   text-align: center;
 }
 
 .menu ul li {
     margin: 0 1rem;
+    display: inline-block;
+    float: none;
 }
 
-
+.posts{
+    display: flex;
+    flex-wrap: wrap;
+}
 .post{
+    overflow:auto;
+    width:50%;
     box-sizing:border-box;
     padding: 0 1rem;
 
 }
+
 
 #rectangle {
     width:100%;
