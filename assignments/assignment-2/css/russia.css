@@ -9,22 +9,24 @@ h1{
     color: black;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 
-
 }
+
 .menu{
-    font-family: arial;
-    font-style:normal;
-    display: flex;
-    align-items: center;
+    font-family: helvetica;
+    font-style: italic;
 
 }
-.menu ul{
-    flex-direction: row;
+
+.menu ul li {
+    margin: 0 1rem;
 }
 
 
+.post{
+    box-sizing:border-box;
+    padding: 0 1rem;
 
-
+}
 
 #rectangle {
     width:100%;
