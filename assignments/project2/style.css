@@ -20,9 +20,9 @@ body {
 }
 header {
     font-size: 50px;
-    color: rgba(199, 46, 46, 0.836);
+    color: rgba(163, 38, 38, 0.836);
     text-align: center;
-    font-family: georgia;
+    font-family: tahoma;
     font-style: bold;
 
 
@@ -30,5 +30,6 @@ header {
 p {
     font-size: 40px;
     color: rgb(107, 104, 104);
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: tahoma;
 }
+
