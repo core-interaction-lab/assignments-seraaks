@@ -61,3 +61,34 @@ test.addEventListener("mouseover", function( event ) {
     event.target.style.color = "";
   }, 500);
 }, false);
+
+var Airtable = require('airtable');
+var base = new Airtable({apiKey: 'https://api.airtable.com/v0/appJp2Hq2drLKu5VQ/Projects?api_key=key1SiX7gdNiDuSwT'}).base('appJp2Hq2drLKu5VQ');
+
+base('Projects').select({
+    // Selecting the first 3 records in Grid view:
+    maxRecords: 3,
+    view: "Grid view"
+}).eachPage(function page(records, fetchNextPage) {
+    // This function (`page`) will get called for each page of records.
+
+    records.forEach(function(record) {
+        console.log('Retrieved', record.get('Title'));
+    });
+
+    // To fetch the next page of records, call `fetchNextPage`.
+    // If there are more records, `page` will get called again.
+    // If there are no more records, `done` will get called.
+    fetchNextPage();
+
+}, function done(err) {
+    if (err) { console.error(err); return; }
+});
+base('Projects').select({
+  view: 'Grid view'
+}).firstPage(function(err, records) {
+  if (err) { console.error(err); return; }
+  records.forEach(function(record) {
+      console.log('Retrieved', record.get('Title'));
+  });
+});
