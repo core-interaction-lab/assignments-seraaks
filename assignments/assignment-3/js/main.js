@@ -14,7 +14,8 @@ const fetchMovies = async () => {
 
         titleEl.innerHTML = movie.fields.Title;
 
-        articleEl.appendChild(titleEl);
+        articleEl.append(titleEl,genreEl,IMDBurl,releaseDateEl);
+        
 
         moviesContainer.appendChild(articleEl);
     });
@@ -62,7 +63,7 @@ test.addEventListener("mouseover", function( event ) {
   }, 500);
 }, false);
 
-var Airtable = require('airtable');
+var Airtable = require('Movies');
 var base = new Airtable({apiKey: 'https://api.airtable.com/v0/appJp2Hq2drLKu5VQ/Projects?api_key=key1SiX7gdNiDuSwT'}).base('appJp2Hq2drLKu5VQ');
 
 base('Projects').select({
