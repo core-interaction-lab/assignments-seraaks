@@ -11,10 +11,15 @@ const fetchMovies = async () => {
         const genreEl = document.createElement('div');
         const IMDBurl = document.createElement('div');
         const releaseDateEl = document.createElement('div');
+        const descriptionEl = document.createElement('div');
+        const posterEl = document.createElement('div');
 
 
 
         titleEl.innerHTML = movie.fields.Title;
+        genreEl.innerHTML = movie.fields.genre;
+        IMDBurl.innerHTML = movie.fields.IMDBurl;
+
 
         articleEl.append(titleEl,genreEl,IMDBurl,releaseDateEl);
         
@@ -85,4 +90,6 @@ base('Projects').select({
       console.log('Retrieved', record.get('Title'));
   });
 });
+
+
 
