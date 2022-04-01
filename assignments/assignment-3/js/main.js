@@ -12,6 +12,8 @@ const fetchMovies = async () => {
         const IMDBurl = document.createElement('div');
         const releaseDateEl = document.createElement('div');
 
+
+
         titleEl.innerHTML = movie.fields.Title;
 
         articleEl.append(titleEl,genreEl,IMDBurl,releaseDateEl);
@@ -39,25 +41,19 @@ fetchMovies();
 
 let test = document.getElementById("movies-container");
 
-// This handler will be executed only once when the cursor
-// moves over the unordered list
+
 test.addEventListener("mouseenter", function( event ) {
-  // highlight the mouseenter target
   event.target.style.color = "purple";
 
-  // reset the color after a short delay
   setTimeout(function() {
     event.target.style.color = "";
   }, 500);
 }, false);
 
-// This handler will be executed every time the cursor
-// is moved over a different list item
+
 test.addEventListener("mouseover", function( event ) {
-  // highlight the mouseover target
   event.target.style.color = "orange";
 
-  // reset the color after a short delay
   setTimeout(function() {
     event.target.style.color = "";
   }, 500);
@@ -67,19 +63,15 @@ var Airtable = require('Movies');
 var base = new Airtable({apiKey: 'https://api.airtable.com/v0/appJp2Hq2drLKu5VQ/Projects?api_key=key1SiX7gdNiDuSwT'}).base('appJp2Hq2drLKu5VQ');
 
 base('Projects').select({
-    // Selecting the first 3 records in Grid view:
     maxRecords: 3,
     view: "Grid view"
 }).eachPage(function page(records, fetchNextPage) {
-    // This function (`page`) will get called for each page of records.
 
     records.forEach(function(record) {
         console.log('Retrieved', record.get('Title'));
     });
 
-    // To fetch the next page of records, call `fetchNextPage`.
-    // If there are more records, `page` will get called again.
-    // If there are no more records, `done` will get called.
+    
     fetchNextPage();
 
 }, function done(err) {
@@ -93,3 +85,4 @@ base('Projects').select({
       console.log('Retrieved', record.get('Title'));
   });
 });
+
