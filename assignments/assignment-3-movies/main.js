@@ -26,11 +26,21 @@ const fetchMovies = async () => {
 
     response.records.forEach((movie)=>{
         console.log(movie);
-        if (movie.fields.image){
-            console.log(movie.fields.image[0].url);
+
+        if (movie.fields.Poster){
+            console.log(movie.fields.Poster[0].url);
             const posterImg = document.createElement('img');
-            posterImg.setAttribute('src',movie.fields.image[0].url)
+            posterImg.setAttribute('src',movie.fields.Poster[0].url)
             container.append(posterImg);
+        }
+
+        if(movie.fields.Genre){
+            console.log(movie.fields.Genre[0]);
+            const GenreEl = document.createElement('p');
+            GenreEl.innerHTML = texture.fields.Genre;
+            GenreEl.classList.add('texture-Genre')
+            container.append(GenreEl);
+
         }
 
 

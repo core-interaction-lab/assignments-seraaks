@@ -41,14 +41,9 @@ const fetchTextures = async () => {
             container.append(descriptionEl);
     
         }
-        if(texture.fields.maincolor){
-            console.log(texture.fields.maincolor);
-            const maincolorEl = document.createElement('p');
-            maincolorEl.innerHTML = texture.fields.maincolor;
-            descriptionEl.classList.add('texture-maincolor') //for css code target
-            container.append(maincolorEl);
-    
-        }
+
+        
+        
 
 
 
