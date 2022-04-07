@@ -21,25 +21,26 @@ const fetchMovies = async () => {
     console.log (myObject.release_date)
     console.log(myArray[0]);
 
-    const container = document.getElementById('textures-container');
+    const container = document.getElementById('movies-container');
 
 
     response.records.forEach((movie)=>{
         console.log(movie);
+        if (movie.fields.poster){
+            console.log(movie.fields.poster[0].url);
+            const posterEl = document.createElement('img');
+            posterEl.innerHTML = movie.fields.poster;
+            posterImg.setAttribute('src',poster.fields.img[0].url)
+            container.append(posterEl);
 
-        if (movie.fields.Poster){
-            console.log(movie.fields.Poster[0].url);
-            const posterImg = document.createElement('img');
-            posterImg.setAttribute('src',movie.fields.Poster[0].url)
-            container.append(posterImg);
         }
 
-        if(movie.fields.Genre){
-            console.log(movie.fields.Genre[0]);
-            const GenreEl = document.createElement('p');
-            GenreEl.innerHTML = texture.fields.Genre;
-            GenreEl.classList.add('texture-Genre')
-            container.append(GenreEl);
+        if(movie.fields.genre){
+            console.log(movie.fields.genre[0]);
+            const genreEl = document.createElement('p');
+            genreEl.innerHTML = movie.fields.genre;
+            genreEl.classList.add('movie-genre')
+            container.append(genreEl);
 
         }
 

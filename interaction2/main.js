@@ -51,6 +51,3 @@ const fetchTextures = async () => {
 };
 
 fetchTextures();
-
-
-
