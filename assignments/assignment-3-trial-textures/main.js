@@ -37,9 +37,34 @@ const fetchTextures = async () => {
             console.log(texture.fields.description);
             const descriptionEl = document.createElement('p');
             descriptionEl.innerHTML = texture.fields.description;
-            descriptionEl.classList.add('texture-description')
+            descriptionEl.classList.add('texture-description');
             container.append(descriptionEl);
     
+        }
+
+        if(texture.fields.maincolor){
+            console.log(texture.fields.maincolor);
+            const maincolorEl = document.createElement('p');
+            maincolorEl.innerHTML = texture.fields.maincolor;
+            maincolorEl.classList.add('texture-maincolor');
+            container.append(maincolorEl);
+        }
+
+        if(texture.fields.mainmaterial){
+            console.log(texture.fields.mainmaterial);
+            const mainmaterialEl = document.createElement('p');
+            mainmaterialEl.innerHTML = texture.fields.mainmaterial;
+            mainmaterialEl.classList.add('texture-mainmaterial');
+            container.append(mainmaterialEl);
+
+        }
+        if(texture.fields.date){
+            console.log(texture.fields.date);
+            const dateEl= document.createElement('p');
+            dateEl.innerHTML=texture.fields.date;
+            dateEl.classList.add('texture-date');
+            container.append(dateEl);
+
         }
 
         
@@ -50,7 +75,7 @@ const fetchTextures = async () => {
     });
 };
 
-fetchTextures();
 
+fetchTextures();
 
 
