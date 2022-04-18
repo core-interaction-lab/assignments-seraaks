@@ -117,6 +117,15 @@ const buildSlideshow = (textures)=>{
         textureContainer.append(dateEl);
         
     }
+    if(texture.fields.maincolor.gray){
+        console.log(texture.fields.maincolor.gray);
+        const grayEl=document.createElement('p');
+        grayEl.innerHTML=texture.fields.maincolor.gray;
+        grayEl.classList.add('texture-maincolor-gray');
+        container.append(grayEl);
+        
+        
+    }
 
     return textureContainer;
 };
