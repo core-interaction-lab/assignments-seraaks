@@ -1,5 +1,5 @@
 .texture-description{
-    font-size: 50px;
+    font-size: 30px;
     color: white;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
@@ -35,12 +35,12 @@ body{
 
 
   .texture-maincolor{
-      font-size: 50px;
+      font-size: 30px;
       color: white;
       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   }
   .texture-mainmaterial{
-    font-size: 50px;
+    font-size: 30px;
     color: white;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
@@ -65,5 +65,27 @@ article{
 article img{
     width:100%;
 }
+#prev{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 40%;
+    font-size: large;
+    text-align: center;
+    margin: auto;
+    display: flex;
+    display: grid;
+    background-color: rgb(215, 158, 197);
+
+}
+#next{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 40%;
+    font-size: large;
+    text-align: center;
+    margin: auto;
+    display: flex;
+    display: grid;
+    background-color: rgb(215, 158, 197);
+}
+
 
 

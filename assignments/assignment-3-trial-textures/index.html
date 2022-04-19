@@ -5,7 +5,17 @@
         <link rel="stylesheet" href="styles.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
+        <script>
+            // Function to change webpage background color
+            function changeBodyBg(color){
+                document.body.style.background = color;
+            }
+            
+            // Function to change heading background color
+            function changeHeadingBg(color){
+                document.getElementById("heading").style.background = color;
+            }
+        </script>
             
 
     </head>
@@ -15,6 +25,20 @@
         <nav class="navigation">
                      
                 </nav> 
+                <hr>
+    <div>
+        <label>Click here to change the background!</label>
+        <button type="button" onclick="changeBodyBg('green');">Green</button>
+        <button type="button" onclick="changeBodyBg('gray');">Gray</button>
+        <button type="button" onclick="changeBodyBg('multi');">Rain</button>
+    </div>
+    <br>
+    <div>
+        <label>Click here to categorize different colors!</label>
+        <button type="button" onclick="window.location.href='https://core-interaction-lab.github.io/assignments-seraaks/exercises/exercise-9%20copygreen/index.html'; "onclick="changeHeadingBg('red');">Green</button>
+        <button type="button" onclick="window.location.href='https://core-interaction-lab.github.io/assignments-seraaks/exercises/exercise-9/index.html';"onclick="changeHeadingBg('green');">Gray</button>
+        <button type="button" onclick="changeHeadingBg('blue');">Blue</button>
+    </div>
                 
             
                   

@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     min-height: 100vh;
-    background-color: #9dccde;
+    background-color: #f2e98b;
     font-family: 'Open Sans', Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -10,6 +10,14 @@ body, .nav, .menu {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+header{
+    font-size: 100px;
+    position: absolute;
+    top: 100px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: whitesmoke;
+    text-decoration: black;
 }
 
 .nav {
@@ -41,10 +49,11 @@ body, .nav, .menu {
 
 .menu li a {
     text-decoration: none;
-    color: #666;
+    color: rgb(0, 0, 0);
     text-transform: uppercase;
     font-weight: 600;
     transition: 0.5s;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 .menu li a:hover {
