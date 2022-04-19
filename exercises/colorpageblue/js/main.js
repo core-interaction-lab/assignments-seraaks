@@ -18,7 +18,7 @@ const fetchTextures = async () => {
     texturesArray = response.records;
 
     const greyTextures = texturesArray.filter(texture => {
-        if(texture.fields.maincolor==="brown"){
+        if(texture.fields.maincolor==="blue"){
             return true;
         }
         return false;
