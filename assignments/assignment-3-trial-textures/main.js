@@ -13,8 +13,14 @@ const nextButton = document.getElementById('next');
 const fetchTextures = async () => {
     const response = await fetch(airtableUrl).then(data => data.json());
     // console.log(response);
-    buildSlideshow(response.records);
+    // buildSlideshow(response.records);
+  buildList(response.records);
     return response.records;
+};
+
+const buildList = items => {
+  const articleEls = items.map(buildSlide);
+  slideshowContainer.append(...articleEls);
 };
 
 const buildSlideshow = (textures) => {
@@ -66,15 +72,13 @@ const buildSlide = (texture) => {
         imageImg.id = 'image-img-id';
         textureContainer.append(imageImg);
     }
-    if (texture.fields.description) {
-        console.log(texture.fields.description);
-    }
+    
 
-    if (texture.fields.maincolor) {
-        const maincolorEl = document.createElement('p');
-        maincolorEl.innerHTML = texture.fields.maincolor;
-        maincolorEl.classList.add('texture-maincolor');
-        textureContainer.append(maincolorEl);
+    if (texture.fields.description) {
+        const descriptionEl = document.createElement('p');
+        descriptionEl.innerHTML = texture.fields.description;
+        descriptionEl.classList.add('texture-description');
+        textureContainer.append(descriptionEl);
     }
     return textureContainer;
 };
