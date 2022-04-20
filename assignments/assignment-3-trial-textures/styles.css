@@ -19,6 +19,25 @@ h1{
   75% { color: rgb(213, 124, 124); }
   100% { color: rgb(218, 117, 117); }
 }
+h2{
+  color: rgb(224, 170, 170);
+  text-align: center;
+  font-size: 27px;
+  font-style: italic;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  
+  flex-direction: row;
+  animation: color-change 1s infinite;
+  position: absolute;
+  top: -20px;
+  text-decoration: none;
+  animation: color-change 1s infinite;
+
+}
+a:visited{
+  text-decoration: none;
+  color: rgb(224, 170, 170);
+}
 
 
 body{
@@ -31,7 +50,6 @@ body{
 
 
 }
-
 
 #slideshow-container{
   display: flex;
@@ -53,12 +71,14 @@ img{
 }
 #button1{
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    border-radius: 60%;
+    border-radius: 90%;
     font-size: large;
     text-align: center;
-    margin-left: 500px;
+    margin-left: 550px;
     background-color: rgb(168, 187, 82);
     display: inline-block;
+    width: 40px;
+    height: 40px;
     
 }
 #button2{
@@ -71,6 +91,8 @@ img{
     display: grid;
     background-color: rgb(178, 179, 171);
     display: inline-block;
+    width: 40px;
+    height: 40px;
     
 
 }
@@ -84,6 +106,10 @@ img{
     display: grid;
     background-color: rgb(255, 255, 255);
     display: inline-block;
+    width: 40px;
+    height: 40px;
+    animation: color-change 1s infinite;
+
 
 }
 #button4{
@@ -96,7 +122,9 @@ img{
     display: grid;
     background-color: rgb(168, 187, 82);
     display: inline-block;
-    margin-left: 450px;
+    margin-left: 400px;
+    width: 80px;
+    height: 80px;
 
 
 
@@ -111,6 +139,8 @@ img{
     display: grid;
     background-color: rgb(178, 179, 171);
     display: inline-block;
+    width: 80px;
+    height: 80px;
 
 
 }
@@ -124,6 +154,8 @@ img{
     display: grid;
     background-color: rgb(255, 255, 255);
     display: inline-block;
+    width: 80px;
+    height: 80px;
 
 
 }
@@ -137,6 +169,8 @@ img{
     display: grid;
     background-color: rgb(92, 81, 64);
     display: inline-block;
+    width: 40px;
+    height: 40px;
 
 
 }
@@ -150,6 +184,8 @@ img{
     display: grid;
     background-color: rgb(92, 81, 64);
     display: inline-block;
+    width: 80px;
+    height: 80px;
     
 }
 #button8{
@@ -162,6 +198,8 @@ img{
     display: grid;
     background-color: rgb(92, 81, 64);
     display: inline-block;
+    width: 80px;
+    height: 80px;
     
 }
 #button9{
@@ -174,6 +212,8 @@ img{
     display: grid;
     background-color: rgb(27, 105, 133);
     display: inline-block;
+    width: 40px;
+    height: 40px;
     
 }
 #button10{
@@ -186,6 +226,8 @@ img{
     display: grid;
     background-color: rgb(27, 105, 133);
     display: inline-block;
+    width: 80px;
+    height: 80px;
     
 }
 #button11{
@@ -198,6 +240,8 @@ img{
     display: grid;
     background-color: rgb(208, 146, 178);
     display: inline-block;
+    width: 40px;
+    height: 40px;
     
 }
 #button12{
@@ -210,6 +254,8 @@ img{
     display: grid;
     background-color: rgb(208, 146, 178);
     display: inline-block;
+    width: 80px;
+    height: 80px;
     
 }
 #button13{
@@ -222,6 +268,8 @@ img{
     display: grid;
     background-color: orange;
     display: inline-block;
+    width: 40px;
+    height: 40px;
     
 }
 #button14{
@@ -234,6 +282,8 @@ img{
     display: grid;
     background-color: orange;
     display: inline-block;
+    width: 80px;
+    height: 80px;
     
 }
 
