@@ -1,4 +1,5 @@
 
+
 const FULL_DASH_ARRAY = 283;
 const WARNING_THRESHOLD = 10;
 const ALERT_THRESHOLD = 5;
@@ -112,3 +113,11 @@ function setCircleDasharray() {
     .getElementById("base-timer-path-remaining")
     .setAttribute("stroke-dasharray", circleDasharray);
 }
+
+const overlay = document.getElementById('overlay')
+document.getElementById('myRange').addEventListener('change', evt => {
+  console.log(evt.target.value);
+  const value = evt.target.value;
+  overlay.setAttribute('style', `opacity: ${value / 100}`);
+})
+
