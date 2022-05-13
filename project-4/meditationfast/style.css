@@ -11,18 +11,91 @@ body {
     height: 95vh;
     z-index: 999;
     background-image: url('https://data.whicdn.com/images/349880761/original.jpg');
+    font-size: 50px;
 
     
 
   }
-  .module {
-    cursor: url('meditation.png'), auto;	
+  * {
+    box-sizing: border-box;
+    font-family: operetta-12, serif;
+    font-size: 10px;
   }
+  
+  
+  .button {
+    background-color: white;
+    color: pink;
+    font-size: 15px;
+    padding: 10px 20px;
+border-radius: 40px;    
+font-family: los feliz,serif;
+font-weight: 900px;
+position: absolute;
+left: 40px;
+top: 40px;
+
+  }
+  
+  .button:hover {
+    color: white;
+    background-color: pink;
+    box-shadow: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-family: operetta-12, serif;
+  }
+  
+  
+  
+  .popup {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    font-family: operetta-12, serif;
+    font-size: 600px;
+  }
+  
+  .popcard {
+    background-color: white;
+    margin: 10% auto;
+    padding: 40px;
+    width: 50%;
+    text-align: center;
+    font-size: 70px;
+    box-shadow: 0 10px 25px 0 pink;
+    animation: popup 0.10s;
+    font-family: operetta-12, serif;
+  }
+  .but{
+    position: absolute;
+    right: 70px;
+    top: 30px;
+    width: 73px;
+    height: 73px;
+    border-radius: 50%;
+  }
+  
+  @keyframes popup {
+    from {
+      opacity: 0;
+    }
+    to { 
+      opacity: 1;
+    }
+  }
+  
   h2{
-    font-family: a-otf-jun-pro, sans-serif;
+    font-family: operetta-12, serif;
     font-size: 15px;
     position: absolute;
-    top: 710px;
+    top: 680px;
     font-style: italic;
     color: white;
   }
@@ -66,47 +139,47 @@ body {
   }
   
   header{
-    font-family:  'Julius Sans One', sans-serif;
+    font-family: ivypresto-display, serif;
 
-    font-weight: 300;
-    
-    font-style: normal;
+font-weight: 400;
+
+font-style: normal;
       font-size:60px;
       color: white;
       
   }
   .p{
-    font-family: a-otf-jun-pro, sans-serif;
-    font-size: 10px;
+    font-family: operetta-12, serif;
+    font-size: 100px;
     display: flex;
     justify-content: center;
     color: white;
   }
   p:before{
     content: 'While you meditate, close your eyes and sit comfortably.';
-    font-family: a-otf-jun-pro, sans-serif;
+    font-family: operetta-12, serif;
     font-style: italic;
-    font-size: 100%;
+    font-size: 100px;
     animation-name: head;
-    animation-duration: 10s;
+    animation-duration: 20s;
     animation-iteration-count: infinite;
     color: white;
 }
 
 @keyframes head {
-    0% {font-size:100%; opacity:1;content:"Find a place outside where you can sit comfortably, relaxed, safe, and at ease."}
+    0% {font-size:200%; opacity:1;content:"Find a place outside where you can sit comfortably, relaxed, safe, and at ease."}
     25% {font-size:100%; opacity:1;}
     30% {font-size:100%; opacity:1;}
     35% {font-size:100%; opacity:1;}
     40% {font-size:100%; opacity:1;}
     45% {font-size:100%; opacity:1;}
-    50% {font-size:100%; opacity:1;content:"Stay present in awareness where each sound is coming and going."}
+    50% {font-size:200%; opacity:1;content:"Stay present in awareness where each sound is coming and going."}
     55% {font-size:100%; opacity:1;}
     60% {font-size:100%; opacity:1;}
     65% {font-size:100%; opacity:1;}
     70% {font-size:100%; opacity:1;}
     75% {font-size:100%; opacity:1;}
-    80% {font-size:100%; opacity:1; content: "Bring your attention to the feeling of your body sitting."}
+    80% {font-size:200%; opacity:1; content: "Bring your attention to the feeling of your body sitting."}
     85% {font-size:100%; opacity:1;}
     90% {font-size:100%; opacity:1;}
 
@@ -118,7 +191,7 @@ body {
     position: relative;
     width: 300px;
     height: 300px;
-    font-family: a-otf-jun-pro, sans-serif;
+    font-family: operetta-12, serif;
     color: white;
   }
   
