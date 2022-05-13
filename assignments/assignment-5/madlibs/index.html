@@ -1,0 +1,46 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mad Libs!</title>
+    <link rel="stylesheet" href="style.css">
+<script src="main.js"></script>
+    <meta charset="utf-8" />
+    <script>
+        (function(d) {
+          var config = {
+            kitId: 'mjn5ewa',
+            scriptTimeout: 3000,
+            async: true
+          },
+          h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+        })(document);
+      </script>
+</head>
+
+<body>
+    <button class="but" type="button"> <img src="https://cdn-icons-png.flaticon.com/512/2689/2689027.png" height ="50" width="60" /></button>
+    <h1>Mad Libs!</h1>
+<!--Create a div for the game-->
+    <div id="forms"> 
+        <p>A Name:</p>
+<!--Give each input an id-->
+        <input type="text" id="noun">
+        <p>A Verb:</p>
+        <input type="text" id="adjective">
+        <p>An Adjective:</p>
+        <input type="text" id="verb">
+        <p>A Noun:</p>
+        <input type="text" id="name">
+        <p>Exclamation: </p>
+        <input type="text" id="exclamation">
+
+    </div>
+<!--Use a button to launch the function-->
+    <button id="lib-button" onclick="madLibs()">Write it out!</button>
+    <div id="story"></div>
+
+
+</body>
+
+</html>
