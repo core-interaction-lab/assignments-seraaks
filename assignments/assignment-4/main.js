@@ -49,8 +49,7 @@ const url3 = 'https://interactionlab.space/data/assignment-4-3.json';
 
 const main = async () => {
     const response1 = await fetchContent(url1);
-    const response2 = await fetchContent(url2);
-    const response3 = await fetchContent(url3);
+    
     // console.log(response);
     buildAlbums(response1.items);
     buildEpisodes(response2);

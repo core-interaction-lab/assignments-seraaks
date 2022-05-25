@@ -1,0 +1,21 @@
+h1{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 80px;
+    text-align: center;
+    color: purple;
+    animation: color-change 1s infinite;
+
+}
+@keyframes color-change {
+    0% { color: pink; }
+    25% { color: rgb(207, 213, 124); }
+    50% { color: rgb(124, 124, 213); }
+    75% { color: rgb(213, 124, 124); }
+    100% { color: rgb(218, 117, 117); }
+}
+body{
+    text-align: center;
+    padding: 10px;
+    margin: 60px;
+    background-image: url(https://data.whicdn.com/images/348135401/original.jpg);
+}
